@@ -1,0 +1,21 @@
+{
+    "id": 124512892,
+    "qr": {
+        "image": "https://www.mercadopago.com/instore/merchant/qr/124512892/986b0552ec584e1ba00e0f0bd1f770ae894bd8c9e4ac4cd5bd1f2ae19f70663d.png",
+        "template_document": "https://www.mercadopago.com/instore/merchant/qr/124512892/template_986b0552ec584e1ba00e0f0bd1f770ae894bd8c9e4ac4cd5bd1f2ae19f70663d.pdf",
+        "template_image": "https://www.mercadopago.com/instore/merchant/qr/124512892/template_986b0552ec584e1ba00e0f0bd1f770ae894bd8c9e4ac4cd5bd1f2ae19f70663d.png"
+    },
+    "status": "active",
+    "date_created": "2026-01-19T15:13:34.000-04:00",
+    "date_last_updated": "2026-01-19T15:13:34.000-04:00",
+    "uuid": "986b0552ec584e1ba00e0f0bd1f770ae894bd8c9e4ac4cd5bd1f2ae19f70663d",
+    "user_id": 2122149601,
+    "name": "Caja 1",
+    "fixed_amount": false,
+    "category": 621102,
+    "store_id": "78100422",
+    "external_store_id": "ST001",
+    "external_id": "POS002",
+    "site": "MLA",
+    "qr_code": "00020101021143540016com.mercadolibre0130https://mpago.la/pos/1245128925011000711111115204970053030325802AR5909Test Test6004CABA6304EDC8"
+}

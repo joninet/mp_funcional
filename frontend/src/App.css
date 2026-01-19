@@ -1,0 +1,181 @@
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #f0f2f5;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  color: #333;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  color: #009ee3; /* Mercado Pago Blue */
+  margin-bottom: 2rem;
+}
+
+.pos-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.qr-section {
+  padding: 1rem;
+  border: 2px dashed #009ee3;
+  border-radius: 8px;
+}
+
+.qr-image {
+  max-width: 250px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+}
+
+.btn-primary {
+  background-color: #009ee3;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #007bb1;
+}
+
+.btn-primary:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.status-message {
+  padding: 1rem;
+  background-color: #e3f2fd;
+  border-radius: 6px;
+  color: #0d47a1;
+  font-weight: 500;
+}
+
+.test-accounts {
+  margin-top: 2rem;
+  text-align: left;
+  font-size: 0.9rem;
+  background: #eee;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.test-accounts h4 {
+  margin-top: 0;
+}
+
+.payment-status {
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.payment-status.pending {
+  background-color: #fff3cd;
+  border: 1px solid #ffeaa7;
+  color: #856404;
+}
+
+.payment-status.approved,
+.payment-status.authorized {
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  color: #155724;
+}
+
+.payment-status.in_process {
+  background-color: #cce7ff;
+  border: 1px solid #99d6ff;
+  color: #004085;
+}
+
+.payment-status.rejected,
+.payment-status.cancelled {
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+}
+
+.status-pending::before { content: "⏳ "; }
+.status-approved::before { content: "✅ "; }
+.status-in_process::before { content: "🔄 "; }
+.status-rejected::before { content: "❌ "; }
+.status-cancelled::before { content: "❌ "; }
+.status-authorized::before { content: "✅ "; }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1a1a1a;
+    color: #f9f9f9;
+  }
+  .pos-card {
+    background: #242424;
+    color: white;
+  }
+  input {
+    background: #333;
+    color: white;
+    border-color: #444;
+  }
+  .test-accounts {
+    background: #333;
+  }
+}
